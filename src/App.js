@@ -9,7 +9,7 @@ function App() {
   const handleSubmit = async (e) => {
   e.preventDefault();
   try {
-    const response = await axios.get(`http://localhost:5000/${phoneNumber}`);
+    const response = await axios.get(`https://basicdeployment.onrender.com/${phoneNumber}`);
     setData(response.data);
     console.log(response.data);
   } catch (error) {
